@@ -1,3 +1,6 @@
 .env
 result
 score
+.venv
+tau/tau2-bench
+.file_locks

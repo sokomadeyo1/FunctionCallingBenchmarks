@@ -22,6 +22,7 @@ ifdef BASE_URL
 	sed 's|base_url.*|base_url="$(BASE_URL)",|' .venv/lib/python3.10/site-packages/bfcl_eval/model_handler/api_inference/qwen.py --in-place
 	sed 's/api_key=.*$$/api_key=os.getenv("MSU_API_KEY"),/' .venv/lib/python3.10/site-packages/bfcl_eval/model_handler/api_inference/qwen.py --in-place
 	cp model_config.py .venv/lib/python3.10/site-packages/bfcl_eval/constants/model_config.py
+	@echo "Done. Please add API key to .env"
 endif
 
 $(MODELS):

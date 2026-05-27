@@ -27,6 +27,7 @@ ifdef BASE_URL
 	rm -rf .venv/lib/python3.10/site-packages/bfcl_eval/data/*
 	mv ru_bfcl/* .venv/lib/python3.10/site-packages/bfcl_eval/data
 	rm -rf ru_bfcl
+	@echo "Done. Please add API key to .env"
 endif
 
 $(MODELS):

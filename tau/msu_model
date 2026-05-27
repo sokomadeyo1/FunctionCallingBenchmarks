@@ -1,0 +1,4 @@
+  "msu": {
+    "base_url": "$BASE_URL",
+    "api_key_env": "MSU_API_KEY"
+  }
